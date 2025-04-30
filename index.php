@@ -57,6 +57,7 @@ $total_result = $conn->query($total_query);
 $total_books = $total_result->fetch_row()[0];
 $total_pages = ceil($total_books / $records_per_page);
 
+// init message
 $message = '';
 
 if (isset($_GET['success'])) {
